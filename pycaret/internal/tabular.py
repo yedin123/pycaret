@@ -4348,6 +4348,16 @@ def plot_model(
             logger.info("Visual Rendered Successfully")
             return plot_filename
 
+        def auc_plotly(estimator):
+            
+            from pycaret.internal.plots.plotly_auc import auc_plotly
+
+            auc_plotly(estimator=pipeline_with_model,
+                        X_train=data_X,
+                        y_train=data_y,
+                        X_test = test_X,
+                        y_test = test_y)
+
         def cluster():
             logger.info(
                 "SubProcess assign_model() called =================================="
