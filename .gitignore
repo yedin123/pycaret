@@ -27,3 +27,12 @@ tutorials/logs.log
 .idea/
 /pycaret/tests/mlruns/
 *.log
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
